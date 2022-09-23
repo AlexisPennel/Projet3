@@ -15,7 +15,7 @@ body h1 {
 }
 
 body h2 {
-    margin-left: 4%;
+    margin-left: 5%;
 }
 
 /*variables*/
@@ -115,7 +115,7 @@ nav p {
 
 .title__link:hover {
     background: linear-gradient(var(--secondary_color), 60%, var(--primary_color));
-    box-shadow: 0px 20px 25px -23px rgba(0,0,0,1);
+    box-shadow: 0px 20px 25px -23px rgba(0, 0, 0, 1);
 }
 
 /*main*/
@@ -125,18 +125,19 @@ nav p {
 aside {
     margin-bottom: 15%;
 }
+
 .aside__box {
     position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background-color: rgb(246, 246, 246);
-    width: 85%;
+    width: 87%;
     height: 4em;
     border-radius: 20px;
-    margin-left: 9%;
+    margin-left: 8%;
     margin-bottom: 5%;
-    box-shadow: 0px 4px 10px 2px  rgba(0, 0, 0, 0.096);
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.096);
 }
 
 .aside__icon {
@@ -154,7 +155,9 @@ aside p {
     margin-left: 7%;
 }
 
-.fa-1, .fa-2, .fa-3 {
+.fa-1,
+.fa-2,
+.fa-3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,9 +168,72 @@ aside p {
     border-radius: 100%;
     border: 2px var(--primary_color) solid;
     z-index: 1;
-    margin-left: 5.5%;
+    margin-left: 5%;
     margin-top: 5.5%;
     font-size: 0.7em;
     color: white;
 }
 
+/*section restaurants*/
+
+section {
+    background-color: var(--light_grey);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h2 {
+    align-self: start;
+    margin-top: 14%;
+    margin-bottom: 6%;
+}
+
+.restaurant__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    height: 16em;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.096);
+}
+
+.restaurant__box img {
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+    border-radius: 15px 15px 0 0;
+}
+
+.restaurant__box h3,
+p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*la pallette*/
+
+.box__title {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title__text {
+    width: 50%;
+    margin-right: 25%;
+}
+
+.fa-heart {
+    font-size: 1.5em;
+    margin-right: 5%;
+}
