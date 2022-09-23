@@ -28,17 +28,19 @@
         <div class="nav__location">
             <i class="fa-solid fa-location-dot"></i>
 
-            <select>
-                <option value="0">Paris,Belleville</option>
+            <select class="location__select">
+                <option value="0">Paris, Belleville</option>
                 <option value="1">ville 2</option>
                 <option value="2">ville 3</option>
             </select>
         </div>
 
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+        <div class="nav__title">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
 
-        <a href="#restaurants" class="header__link">Explorer nos restaurants</a>
+            <a href="#restaurants" class="title__link">Explorer nos restaurants</a>
+        </div>
     </nav>
 
     <main>
@@ -46,16 +48,25 @@
             <h2>Fonctionnement</h2>
 
             <i class="fa-solid fa-1"></i>
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            <p>Choisissez un restaurant</p>
+
+            <div class="aside__box aside__choose">
+                <i class="aside__icon fa-solid fa-mobile-screen-button"></i>
+                <p>Choisissez un restaurant</p>
+            </div>
 
             <i class="fa-solid fa-2"></i>
-            <i class="fa-solid fa-list-ul"></i>
-            <p>Composez votre menu</p>
+
+            <div class="aside__box">
+                <i class=" aside__icon fa-solid fa-list-ul"></i>
+                <p>Composez votre menu</p>
+            </div>
 
             <i class="fa-solid fa-3"></i>
-            <i class="fa-solid fa-store"></i>
-            <p>Dégustez au restaurant</p>
+
+            <div class="aside__box">
+                <i class=" aside__icon fa-solid fa-store"></i>
+                <p>Dégustez au restaurant</p>
+            </div>
         </aside>
 
         <section id="restaurants">
