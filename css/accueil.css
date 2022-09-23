@@ -1,0 +1,62 @@
+/*general*/
+
+body {
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+body h1,
+h2,
+h3 {
+    font-family: 'Shrikhand', cursive;
+}
+
+/*variables*/
+
+:root {
+    --primary_color: #9356dc;
+    --secondary_color: #FF79DA;
+    --tertiary_color: #99E2D0;
+    --dark_grey: #eaeaea;
+    --light_grey: #f6f6f6;
+}
+
+/*body*/
+
+/*header*/
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3.5em;
+}
+
+header a {
+    display: flex;
+    justify-content: center;
+    
+}
+
+header img {
+    width: 45%;
+}
+
+/*nav*/
+
+.nav__location {
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark_grey);
+    width: 100%;
+    height: 3em;
+    box-shadow: inset 0 75px 25px -76px #d4d4d4;
+}
+
+
