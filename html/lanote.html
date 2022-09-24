@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lapalette.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <script src="https://kit.fontawesome.com/36db748ff7.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,16 +19,21 @@
 
 <body>
     <header>
-        <a href="accueil.html">
-            <img src="../images/" alt="logo du site ohmyfood">
+        <a href="../html/accueil.html" class="header__link1">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+
+        <a href="../html/accueil.html" class="header__link2">
+            <img src="../images/logo/ohmyfood.png" alt="logo du site ohmyfood">
         </a>
     </header>
+
 
     <main>
         <img src="../images/restaurants/lanote.jpg"
             alt="photo d'un plat avec une présentation soignée du restaurant La note enchantée de Charonne">
 
-        <section>
+        <section class="main__menu">
             <header>
                 <h1>La note enchantée</h1>
                 <i class="fa-regular fa-heart"></i>
@@ -111,27 +116,29 @@
     </main>
 
     <footer>
-        <a href="#">
-            <img src="../images/logo/ohmyfood.png" alt="">
-        </a>
+        <section class="footer__nav">
+            <a href="#">
+                <img src="../images/logo/ohmyfood_white.png" alt="logo de Oh my food">
+            </a>
 
-        <a href="#">
-            <i class="fa-solid fa-utensils"></i>
-            <p>Proposez un restaurant</p>
-        </a>
+            <a href="#" class="nav__link--1">
+                <i class="link__icon--1 fa-solid fa-utensils"></i>
+                <p>Proposez un restaurant</p>
+            </a>
 
-        <a href="#">
-            <i class="fa-solid fa-handshake-angle"></i>
-            <p>Devenir partenaire</p>
-        </a>
+            <a href="#" class="nav__link--2">
+                <i class="link__icon--2 fa-solid fa-handshake-angle"></i>
+                <p>Devenir partenaire</p>
+            </a>
 
-        <a href="#">
-            <p>Mentions légales</p>
-        </a>
+            <a href="#">
+                <p>Mentions légales</p>
+            </a>
 
-        <a href="#">
-            <p>Contact</p>
-        </a>
+            <a href="mailto:alexispennel@gmail.com">
+                <p>Contact</p>
+            </a>
+        </section>
     </footer>
 </body>
 
