@@ -109,7 +109,6 @@ nav p {
     width: 60%;
     height: 3em;
     background: linear-gradient(var(--secondary_color), 40%, var(--primary_color));
-    border: 0px, var(--light_grey) solid;
     border-radius: 30px;
     color: white;
     text-decoration: none;
