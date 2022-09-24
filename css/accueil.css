@@ -73,7 +73,7 @@ header img {
     -webkit-appearance: none;
     font-size: 1em;
     margin-right: 6%;
-    font-weight: 600;
+    cursor: pointer;
 }
 
 .nav__title {
@@ -98,13 +98,14 @@ nav p {
     width: 90%;
     text-align: center;
     color: rgba(0, 0, 0, 0.719);
+    font-size: 1.1em;
 }
 
 .title__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 55%;
+    width: 60%;
     height: 3em;
     background: linear-gradient(var(--secondary_color), 40%, var(--primary_color));
     border: 0px, var(--light_grey) solid;
@@ -154,10 +155,11 @@ aside {
     width: 25px;
     height: 25px;
     color: #7e7e7e;
+    font-size: 1.2em;
+
 }
 
 aside p {
-    font-weight: bold;
     margin-left: 7%;
 }
 
@@ -222,7 +224,21 @@ p {
     margin-bottom: 5%;
 }
 
-/*la pallette*/
+.restaurant__box span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22%;
+    height: 4.5%;
+    background-color: var(--tertiary_color);
+    color: #139273;
+    position: absolute;
+    z-index: 1;
+    margin-left: 65%;
+    margin-top: 4%;
+    font-size: 90% ;
+    border-radius: 2px;
+}
 
 .box__title {
     width: 100%;
@@ -241,6 +257,8 @@ p {
     font-size: 1.5em;
     margin-right: 5%;
 }
+
+
 
 /*footer*/
 
