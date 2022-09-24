@@ -67,7 +67,6 @@ main img {
     width: 100%;
     height: 20em;
     object-fit: cover;
-   
 }
 
 .main__menu {
@@ -95,6 +94,64 @@ main img {
     margin-left: 13%;
     font-size: 1.5em;
 }
+
+.main__menu h2 {
+    font-size: 1em;
+    font-weight: normal;
+    width: 10%;
+    border-bottom: 3px var(--tertiary_color) solid;
+}
+
+.main__menu h3 {
+    margin-bottom: 0%;
+    margin-top: 7%;
+}
+
+.main__menu p {
+    margin-top: 4%;
+}
+
+.main__menu a {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+background-color: white;
+width: 90%;
+height: 5em;
+margin-bottom: 10%;
+margin-left: 5%;
+border-radius: 15px;
+text-decoration: none;
+color: black;
+}
+
+.menu__text {
+    margin-left: 3%;
+}
+
+.menu__price {
+    align-self:flex-end;
+    margin-left: 33%;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
