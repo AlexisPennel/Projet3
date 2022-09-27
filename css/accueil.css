@@ -225,7 +225,7 @@ p {
     margin-bottom: 5%;
 }
 
-.restaurant__box span {
+.restaurant__box--new {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -254,11 +254,31 @@ p {
     margin-right: 25%;
 }
 
-.fa-heart {
-    font-size: 1.5em;
-    margin-right: 5%;
+.heart__empty {
+    position: absolute;
+    z-index: 1;
+    color: black;
+    font-size: 1.9em;
+    background-color: transparent;
+    margin-bottom: 10%;
+    margin-top: -0.5%;
+    margin-left: -3.5%;
+
 }
 
+.heart__full {
+   
+    font-size: 1.6em;
+    margin-left:-40%;
+    margin-bottom: 40%;
+    color:white;
+    transition: color 1s;    
+}
+
+.heart__empty:hover+.heart__full {
+    color: var(--primary_color);
+    
+}
 
 /*footer*/
 
