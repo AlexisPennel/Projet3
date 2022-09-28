@@ -9,7 +9,7 @@ body {
     margin-top: auto;
     margin-bottom: auto;
     font-family: 'Roboto', sans-serif;
-    
+
 }
 
 body h1 {
@@ -64,6 +64,36 @@ header img {
     width: 100%;
 }
 
+/*test coeur */
+
+.restaurant__heart {
+    margin-left: auto;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+.heart__empty {
+    position: absolute;
+    z-index: 1;
+    color: black;
+    font-size: 1.5em;
+    margin-bottom: 10%;
+    margin-top: -0.5%;
+    margin-left: -3.5%;
+}
+
+.heart__full {
+    font-size: 1.3em;
+    margin-left: -55%;
+    margin-bottom: 40%;
+    color: var(--light_grey);
+    transition: color 0.5s;
+}
+
+.heart__empty:hover+.heart__full {
+    color: var(--primary_color);
+}
+
 /*main*/
 
 main img {
@@ -91,11 +121,6 @@ main img {
     align-items: center;
     margin-top: 5%;
     margin-left: 5%;
-}
-
-.main__menu header i {
-    margin-left: 10%;
-    font-size: 1.5em;
 }
 
 .menu__titles--starters {

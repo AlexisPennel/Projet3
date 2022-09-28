@@ -109,7 +109,7 @@ nav p {
     justify-content: center;
     width: 60%;
     height: 3em;
-    background: linear-gradient(var(--secondary_color), 40%, var(--primary_color));
+    background:linear-gradient(356deg, rgba(147,86,220,1) 35%, rgba(255,121,218,1) 100%);
     border-radius: 30px;
     color: white;
     text-decoration: none;
@@ -117,7 +117,7 @@ nav p {
 }
 
 .title__link:hover {
-    background: linear-gradient(var(--secondary_color), 60%, var(--primary_color));
+    background:linear-gradient(356deg, rgba(147,86,220,1) 30%, rgba(255,121,218,1) 86%);
     box-shadow: 0px 20px 25px -23px rgba(0, 0, 0, 1);
 }
 
@@ -254,30 +254,29 @@ p {
     margin-right: 25%;
 }
 
+/*test transition coeur*/
+
 .heart__empty {
     position: absolute;
     z-index: 1;
     color: black;
-    font-size: 1.9em;
+    font-size: 1.5em;
     background-color: transparent;
     margin-bottom: 10%;
     margin-top: -0.5%;
     margin-left: -3.5%;
-
 }
 
 .heart__full {
-   
-    font-size: 1.6em;
-    margin-left:-40%;
+    font-size: 1.3em;
+    margin-left:-55%;
     margin-bottom: 40%;
     color:white;
-    transition: color 1s;    
+    transition: color 0.5s;    
 }
 
 .heart__empty:hover+.heart__full {
     color: var(--primary_color);
-    
 }
 
 /*footer*/
