@@ -114,11 +114,12 @@ nav p {
     color: white;
     text-decoration: none;
     margin-top: 4%;
+    box-shadow: 0px 25px 25px -23px black;
 }
 
 .title__link:hover {
     background:linear-gradient(356deg, rgba(147,86,220,1) 30%, rgba(255,121,218,1) 86%);
-    box-shadow: 0px 20px 25px -23px rgba(0, 0, 0, 1);
+    box-shadow: 0px 30px 25px -22px black;
 }
 
 /*main*/
