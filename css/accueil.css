@@ -27,6 +27,7 @@ body h2 {
     --footer-color: #353535;
     --background-1: #eaeaea;
     --background-2: #f6f6f6;
+    --font-color:#555555;
 }
 
 /*body*/
@@ -69,13 +70,10 @@ header img {
     font-size: 1.1em;
 }
 
-.location__select {
-    border: none;
-    -webkit-appearance: none;
-    font-size: 1em;
-    margin-right: 6%;
-    cursor: pointer;
-    background-color: var(--background-1);
+.location__city {
+    width: 35%;
+    margin-right: 5%;
+    color: black;
 }
 
 .nav__title {
@@ -99,7 +97,7 @@ nav h2 {
 nav p {
     width: 90%;
     text-align: center;
-    color: rgba(0, 0, 0, 0.719);
+    color: var(--font-color);
     font-size: 1.1em;
 }
 
@@ -109,17 +107,17 @@ nav p {
     justify-content: center;
     width: 60%;
     height: 3em;
-    background:linear-gradient(356deg, rgba(147,86,220,1) 35%, rgba(255,121,218,1) 100%);
+    background-image: linear-gradient(to bottom, var(--secondary_color), 35%, var(--primary_color));
     border-radius: 30px;
     color: white;
     text-decoration: none;
     margin-top: 4%;
-    box-shadow: 0px 25px 25px -23px black;
+    box-shadow: 0px 16px 20px -18px black;
 }
 
 .title__link:hover {
-    background:linear-gradient(356deg, rgba(147,86,220,1) 30%, rgba(255,121,218,1) 86%);
-    box-shadow: 0px 25px 23px -22px black;
+    background-image: linear-gradient(to bottom, var(--secondary_color), 70%, var(--primary_color));
+    box-shadow: 0px 16px 20px -10px black;
 }
 
 /*main*/
@@ -146,10 +144,18 @@ aside {
     border-radius: 20px;
     margin-left: 8%;
     margin-bottom: 0%;
-    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.096);
+    box-shadow: 0px 10px 20px -20px black;
 }
 
-.aside__icon {
+.aside__box--2:hover{
+    background-color: #9256dc25;
+}
+
+.aside__box--2:hover>.aside__icon {
+    color: var(--primary_color);
+}
+
+.aside__icon{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,7 +164,6 @@ aside {
     height: 25px;
     color: #7e7e7e;
     font-size: 1.2em;
-
 }
 
 aside p {
@@ -210,7 +215,7 @@ section h2 {
     margin-bottom: 5%;
     text-decoration: none;
     color: black;
-    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.096);
+    box-shadow: 0px 10px 20px -20px black;
 }
 
 .restaurant__box img {
@@ -220,10 +225,17 @@ section h2 {
     border-radius: 15px 15px 0 0;
 }
 
-.restaurant__box h3,
-p {
+.restaurant__box h3 {
     margin-top: 5%;
     margin-bottom: 5%;
+    font-size: 1.17em;
+}
+
+.restaurant__box p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 1.17em;
+    color: var(--font-color);
 }
 
 .restaurant__box--new {
@@ -270,10 +282,10 @@ p {
 
 .heart__full {
     font-size: 1.3em;
-    margin-left:-55%;
+    margin-left: -55%;
     margin-bottom: 40%;
-    color:white;
-    transition: color 0.5s;    
+    color: white;
+    transition: color 0.5s;
 }
 
 .heart__empty:hover+.heart__full {
@@ -293,10 +305,10 @@ footer h2 {
     font-family: 'Shrikhand', cursive;
     color: white;
     width: 100%;
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-bottom: 5%;
     margin-left: 0;
-    margin-top:0%;
+    margin-top: 0%;
 }
 
 .footer__nav {
@@ -353,4 +365,3 @@ footer h2 {
     margin-bottom: 1%;
     width: fit-content;
 }
-
