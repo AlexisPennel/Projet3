@@ -27,9 +27,9 @@ body h2 {
     --primary_color: #9356dc;
     --secondary_color: #FF79DA;
     --tertiary_color: #99E2D0;
-    --black_grey: #353535;
-    --dark_grey: #eaeaea;
-    --light_grey: #f6f6f6;
+    --footer-color: #353535;
+    --background-1: #eaeaea;
+    --background-2: #f6f6f6;
 }
 
 /*body*/
@@ -87,7 +87,7 @@ header h1 {
     font-size: 1.3em;
     margin-left: -55%;
     margin-bottom: 40%;
-    color: var(--light_grey);
+    color: var(--background-2);
     transition: color 0.5s;
 }
 
@@ -109,7 +109,7 @@ main img {
     align-content: flex-start;
     position: sticky;
     z-index: 1;
-    background-color: var(--light_grey);
+    background-color: var(--background-2);
     width: 100%;
     height: auto;
     border-radius: 45px 45px 0 0;
@@ -214,7 +214,7 @@ main img {
 footer {
     display: flex;
     align-items: center;
-    background-color: var(--black_grey);
+    background-color: var(--footer-color);
     height: 14em;
 }
 
