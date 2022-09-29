@@ -27,7 +27,7 @@ body h2 {
     --footer-color: #353535;
     --background-1: #eaeaea;
     --background-2: #f6f6f6;
-    --font-color:#555555;
+    --font-color: #555555;
 }
 
 /*body*/
@@ -147,7 +147,7 @@ aside {
     box-shadow: 0px 10px 20px -20px black;
 }
 
-.aside__box--2:hover{
+.aside__box--2:hover {
     background-color: #9256dc25;
 }
 
@@ -155,7 +155,7 @@ aside {
     color: var(--primary_color);
 }
 
-.aside__icon{
+.aside__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -271,25 +271,66 @@ section h2 {
 
 .heart__empty {
     position: absolute;
-    z-index: 1;
-    color: black;
-    font-size: 1.5em;
-    background-color: transparent;
-    margin-bottom: 10%;
-    margin-top: -0.5%;
-    margin-left: -3.5%;
+    font-size: 1.75em;
+    margin-left: -3%;
+    margin-top: -0.1%;
 }
 
 .heart__full {
-    font-size: 1.3em;
-    margin-left: -55%;
-    margin-bottom: 40%;
-    color: white;
-    transition: color 0.5s;
+    font-size: 1.6em;
+    margin-bottom: 85%;
+    margin-top: 2%;
+    margin-left: -40%;
+    background: white;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
 
 .heart__empty:hover+.heart__full {
-    color: var(--primary_color);
+    animation: heart-filling 0.2s alternate both ;
+}
+
+@keyframes heart-filling {
+    0% {
+        background: white;
+    }
+
+    20% {
+        background: linear-gradient(to top, var(--secondary_color), 20%,white);
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+
+    30%{
+        background: linear-gradient(to top, var(--secondary_color), 30%,white);
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+
+    50% {
+        background: linear-gradient(to top, var(--secondary_color), 50%,white);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    70% {
+        background: linear-gradient(to top, var(--secondary_color), 70%,white);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    80% {
+        background: linear-gradient(to top, var(--secondary_color), 80%,white);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    100% {
+        background: linear-gradient(to top, var(--secondary_color), 50%, var(--primary_color));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 /*footer*/
