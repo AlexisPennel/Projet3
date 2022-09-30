@@ -286,7 +286,6 @@ section h2 {
     color: transparent;
     -webkit-text-fill-color: transparent;
     background-color: transparent;
-    background-image: white;
 }
 
 .heart__empty:hover+.heart__full {
@@ -299,7 +298,6 @@ section h2 {
         -webkit-background-clip: text;
         color: transparent;
         -webkit-text-fill-color: transparent;
-        background-image: white;
     }
 
     20% {
@@ -307,15 +305,15 @@ section h2 {
         -webkit-background-clip: text;
         color: transparent;
         -webkit-text-fill-color: transparent;
-        background-image:linear-gradient(to top, var(--secondary_color), 20%,white);
+        background-image: linear-gradient(to top, var(--secondary_color), 20%, white);
     }
 
-    30%{
+    30% {
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
         -webkit-text-fill-color: transparent;
-        background-image:linear-gradient(to top, var(--secondary_color), 30%,white);
+        background-image: linear-gradient(to top, var(--secondary_color), 30%, white);
     }
 
     50% {
@@ -323,7 +321,7 @@ section h2 {
         -webkit-background-clip: text;
         color: transparent;
         -webkit-text-fill-color: transparent;
-        background-image:linear-gradient(to top, var(--secondary_color), 50%,white);
+        background-image: linear-gradient(to top, var(--secondary_color), 50%, white);
     }
 
     70% {
@@ -331,7 +329,7 @@ section h2 {
         -webkit-background-clip: text;
         color: transparent;
         -webkit-text-fill-color: transparent;
-        background-image:linear-gradient(to top, var(--secondary_color), 70%,white);
+        background-image: linear-gradient(to top, var(--secondary_color), 70%, white);
     }
 
     80% {
@@ -339,7 +337,7 @@ section h2 {
         -webkit-background-clip: text;
         color: transparent;
         -webkit-text-fill-color: transparent;
-        background-image:linear-gradient(to top, var(--secondary_color), 80%,white);
+        background-image: linear-gradient(to top, var(--secondary_color), 80%, white);
     }
 
     100% {
@@ -347,7 +345,7 @@ section h2 {
         -webkit-background-clip: text;
         color: transparent;
         -webkit-text-fill-color: transparent;
-        background-image:linear-gradient(to top, var(--secondary_color), 50%, var(--primary_color));
+        background-image: linear-gradient(to top, var(--secondary_color), 50%, var(--primary_color));
     }
 }
 
