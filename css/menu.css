@@ -30,7 +30,7 @@ body h2 {
     --footer-color: #353535;
     --background-1: #eaeaea;
     --background-2: #f6f6f6;
-    --font-color:#555555;
+    --font-color: #555555;
 }
 
 /*body*/
@@ -91,7 +91,6 @@ header h1 {
     color: transparent;
     -webkit-text-fill-color: transparent;
     background-color: transparent;
-    background-image: white;
 }
 
 .heart__empty:hover+.heart__full {
@@ -104,7 +103,6 @@ header h1 {
         -webkit-background-clip: text;
         color: transparent;
         -webkit-text-fill-color: transparent;
-        background-image: white;
     }
 
     20% {
@@ -112,15 +110,15 @@ header h1 {
         -webkit-background-clip: text;
         color: transparent;
         -webkit-text-fill-color: transparent;
-        background-image:linear-gradient(to top, var(--secondary_color), 20%,white);
+        background-image: linear-gradient(to top, var(--secondary_color), 20%, white);
     }
 
-    30%{
+    30% {
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
         -webkit-text-fill-color: transparent;
-        background-image:linear-gradient(to top, var(--secondary_color), 30%,white);
+        background-image: linear-gradient(to top, var(--secondary_color), 30%, white);
     }
 
     50% {
@@ -128,7 +126,7 @@ header h1 {
         -webkit-background-clip: text;
         color: transparent;
         -webkit-text-fill-color: transparent;
-        background-image:linear-gradient(to top, var(--secondary_color), 50%,white);
+        background-image: linear-gradient(to top, var(--secondary_color), 50%, white);
     }
 
     70% {
@@ -136,7 +134,7 @@ header h1 {
         -webkit-background-clip: text;
         color: transparent;
         -webkit-text-fill-color: transparent;
-        background-image:linear-gradient(to top, var(--secondary_color), 70%,white);
+        background-image: linear-gradient(to top, var(--secondary_color), 70%, white);
     }
 
     80% {
@@ -144,7 +142,7 @@ header h1 {
         -webkit-background-clip: text;
         color: transparent;
         -webkit-text-fill-color: transparent;
-        background-image:linear-gradient(to top, var(--secondary_color), 80%,white);
+        background-image: linear-gradient(to top, var(--secondary_color), 80%, white);
     }
 
     100% {
@@ -152,7 +150,7 @@ header h1 {
         -webkit-background-clip: text;
         color: transparent;
         -webkit-text-fill-color: transparent;
-        background-image:linear-gradient(to top, var(--secondary_color), 50%, var(--primary_color));
+        background-image: linear-gradient(to top, var(--secondary_color), 50%, var(--primary_color));
     }
 }
 
@@ -220,15 +218,15 @@ main img {
 }
 
 .menu__text p {
+
     font-size: 0.95em;
     margin-top: 0%;
     margin-bottom: 0%;
-    color:var(--font-color);
+    color: var(--font-color);
 }
 
 .main__menu-box {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     background-color: white;
     width: 95%;
@@ -240,18 +238,33 @@ main img {
     text-decoration: none;
     color: black;
     box-shadow: 0px 10px 20px -20px black;
+    overflow: hidden;
 }
 
 .menu__text {
     width: 80%;
     margin-left: 3%;
+    transition: width 0.5s ease;
+}
+
+.menu__text h3,
+p {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .menu__price {
+    display: flex;
+    justify-content: center;
     align-self: flex-end;
-    margin-left: 5%;
     margin-bottom: 4%;
     font-weight: bold;
+    width: 20%;
+    margin-right: 0%;
+    margin-left: 0%;
+    transition: width 0.5s ease;
 }
 
 .menu__order-button {
@@ -276,6 +289,49 @@ main img {
     box-shadow: 0px 16px 20px -10px black;
 }
 
+/*check animation*/
+
+.check__container {
+    width: 0%;
+    height: 100%;
+    background-color: var(--tertiary_color);
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.fa-check {
+    border: 1px white solid;
+    border-radius: 50%;
+    color: var(--tertiary_color);
+    background-color: white;
+    padding: 2px;
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+}
+
+.main__menu-box:hover>.menu__text {
+    width: 60%;
+}
+
+.main__menu-box:hover>.menu__price {
+    width: 20%;
+}
+
+.main__menu-box:hover>.check__container {
+    width: 20%;
+    height: 100%;
+    visibility: visible;
+}
+
+.main__menu-box:hover>.check__container>.fa-check {
+    transform: rotate(360deg);
+}
+
 /*footer*/
 
 footer {
@@ -292,7 +348,7 @@ footer h2 {
     font-size: 1.4em;
     margin-bottom: 5%;
     margin-left: 0;
-    margin-top:0%;
+    margin-top: 0%;
 }
 
 .footer__nav {
