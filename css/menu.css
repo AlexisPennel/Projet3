@@ -92,7 +92,6 @@ header h1 {
     font-size: 1.75em;
     background-clip: text;
     -webkit-background-clip: text;
-    background-repeat: none;
     color: transparent;
     background-image: linear-gradient(to top, var(--secondary_color), 50%, var(--primary_color));
     opacity: 0;

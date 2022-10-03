@@ -58,12 +58,12 @@ body h2 {
 @keyframes loadingspinner__container {
     0% {
         opacity: 1;
-        scale: 1;
+        transform:scale(1);
     }
 
     100% {
         opacity: 0;
-        scale: 0;
+        transform:scale(0);
 
     }
 }
@@ -435,7 +435,6 @@ section h2 {
     font-size: 1.75em;
     background-clip: text;
     -webkit-background-clip: text;
-    background-repeat: none;
     color: transparent;
     background-image: linear-gradient(to top, var(--secondary_color), 50%, var(--primary_color));
     opacity: 0;
