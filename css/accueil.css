@@ -1,5 +1,9 @@
 /*general*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: 100%;
     width: 100%;
@@ -47,25 +51,27 @@ body h2 {
     justify-content: center;
     align-items: center;
     opacity: 1;
-    animation: loadingspinner__container 0.3s 3s linear;
+    animation: loadingspinner__container 0.1s 3s linear;
     animation-fill-mode: forwards;
 }
 
 @keyframes loadingspinner__container {
     0% {
         opacity: 1;
+        scale: 1;
     }
 
     100% {
-       opacity: 0;
+        opacity: 0;
+        scale: 0;
+
     }
-    
 }
 
-/*title ohmyfood*/ 
+/*title ohmyfood*/
 
 .spinner__title {
-    color:rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0);
     font-family: 'Shrikhand', cursive;
     font-size: 3.5em;
     padding: 5%;
@@ -79,20 +85,19 @@ body h2 {
     background-repeat: repeat-x;
     background-position-x: 0px;
     background-position-y: 100px;
-    animation: filling 3s cubic-bezier(.56,0,1,.98);
+    animation: filling 3s cubic-bezier(.10, 0, 1, .98);
     animation-fill-mode: forwards;
 }
 
 @keyframes filling {
-    
-    0% {
-        background-position: 0px 100px ;
-        -webkit-background-position: 0px 80px ;
-    }       
 
-   50% {
-    
-   }
+    0% {
+        background-position: 0px 100px;
+        -webkit-background-position: 0px 80px;
+    }
+
+    50% {}
+
     100% {
         background-position: 150px -30px;
         -webkit-background-position: 100px -02px;
@@ -101,20 +106,19 @@ body h2 {
 
 @-webkit-keyframes filling {
     0% {
-        background-position: 0px 100px ;
-        -webkit-background-position: 0px 80px ;
-    }       
+        background-position: 0px 100px;
+        -webkit-background-position: 0px 80px;
+    }
 
-   50% {
-    
-   }
+    50% {}
+
     100% {
         background-position: 150px -30px;
         -webkit-background-position: 100px -02px;
     }
 }
 
-/*border animation*/ 
+/*border animation*/
 
 .spinner__title::before {
     content: "";
@@ -123,10 +127,10 @@ body h2 {
     right: 3.5%;
     width: 90%;
     height: 100px;
-    background-color:transparent;
+    background-color: transparent;
     border-top: 3px var(--tertiary_color) solid;
-    border-left:3px var(--tertiary_color) solid;
-    animation: border 1s cubic-bezier(.88,.03,.23,1.09);
+    border-left: 3px var(--tertiary_color) solid;
+    animation: border 1s cubic-bezier(.88, .03, .23, 1.09);
     transform-origin: top left;
 }
 
@@ -137,19 +141,19 @@ body h2 {
     right: 3.5%;
     width: 90%;
     height: 100px;
-    background-color:transparent;
-    border-bottom:3px var(--tertiary_color) solid;
+    background-color: transparent;
+    border-bottom: 3px var(--tertiary_color) solid;
     border-right: 3px var(--tertiary_color) solid;
-    animation: border 1s cubic-bezier(.88,.03,.23,1.09);
+    animation: border 1s cubic-bezier(.88, .03, .23, 1.09);
     animation-fill-mode: forwards;
     transform-origin: bottom right;
 }
 
 @keyframes border {
-    0%{
-       transform: scale(0);
-       -webkit-transform: scale(0);
-       box-shadow:none
+    0% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        box-shadow: none
     }
 
     50% {
@@ -160,19 +164,19 @@ body h2 {
     100% {
         box-shadow: 0px 0px 6px var(--tertiary_color);
     }
-} 
+}
 
 @-webkit-keyframes border {
-    0%{
-       transform: scale(0);
-       -webkit-transform: scale(0);
+    0% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
     }
 
     100% {
         transform: scale(1);
         -webkit-transform: scale(1);
     }
-} 
+}
 
 /*header*/
 
@@ -216,6 +220,7 @@ header img {
     width: 35%;
     margin-right: 5%;
     color: black;
+    font-weight: bold;
 }
 
 .nav__title {
@@ -419,6 +424,7 @@ section h2 {
     align-items: center;
     margin-bottom: 5%;
 }
+
 .heart__empty {
     position: absolute;
     font-size: 1.75em;
@@ -431,7 +437,7 @@ section h2 {
     -webkit-background-clip: text;
     background-repeat: none;
     color: transparent;
-    background-image: linear-gradient(to top, var(--secondary_color), 50%, var(--primary_color)); 
+    background-image: linear-gradient(to top, var(--secondary_color), 50%, var(--primary_color));
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
