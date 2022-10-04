@@ -723,13 +723,13 @@ footer h2 {
     }
 
     .spinner__title::before {
-        right: 20%;
-        width: 60%;
+        right: 30%;
+        width: 39%;
     }
 
     .spinner__title::after {
-        right: 20%;
-        width: 60%;
+        right: 30%;
+        width: 39%;
     }
 
     /*header*/
@@ -796,7 +796,7 @@ footer h2 {
 
     aside {
         width: 80%;
-        margin-left: 10%;
+        margin-left: 8%;
         margin-bottom: 10%;
         display: grid;
         grid-template-rows: 0.3fr 1fr;
@@ -860,10 +860,10 @@ footer h2 {
     }
 
     .restaurant__box--new {
-        width: 13%;
+        width: 10%;
         height: 6%;
         font-size: 1.5em;
-        margin-left: 22%;
+        margin-left: 25%;
         margin-top: 2%;
     }
 
@@ -871,10 +871,26 @@ footer h2 {
         height: 25%;
     }
 
+    .box__title h3 {
+        font-size: 1.4em;
+    }
+
+    .box__title p {
+        font-size: 1.2em;
+    }
+
     .restaurant__box img {
         height: 75%;
     }
 
+    .restaurant__heart {
+        height:54% ;
+        margin-bottom: 4%;
+    }
+
+    .heart__empty, .heart__full {
+        font-size: 2.3em;
+    }
     /*footer*/
 
     footer {
