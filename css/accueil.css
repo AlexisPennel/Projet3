@@ -38,7 +38,7 @@ body h2 {
 
 /*loading spinner*/
 
-.loading__spinner {
+.loading__spinner{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -58,12 +58,12 @@ body h2 {
 @keyframes loadingspinner__container {
     0% {
         opacity: 1;
-        transform:scale(1);
+        transform: scale(1);
     }
 
     100% {
         opacity: 0;
-        transform:scale(0);
+        transform: scale(0);
 
     }
 }
@@ -91,12 +91,7 @@ body h2 {
 
 @keyframes filling {
 
-    0% {
-        background-position: 0px 100px;
-        -webkit-background-position: 0px 80px;
-    }
-
-    50% {}
+    0% {}
 
     100% {
         background-position: 150px -30px;
@@ -126,7 +121,7 @@ body h2 {
     bottom: 43%;
     right: 3.5%;
     width: 90%;
-    height: 100px;
+    height: 15%;
     background-color: transparent;
     border-top: 3px var(--tertiary_color) solid;
     border-left: 3px var(--tertiary_color) solid;
@@ -140,7 +135,7 @@ body h2 {
     bottom: 43%;
     right: 3.5%;
     width: 90%;
-    height: 100px;
+    height: 15%;
     background-color: transparent;
     border-bottom: 3px var(--tertiary_color) solid;
     border-right: 3px var(--tertiary_color) solid;
@@ -178,6 +173,8 @@ body h2 {
     }
 }
 
+
+
 /*header*/
 
 header {
@@ -186,17 +183,6 @@ header {
     align-items: center;
     width: 100%;
     height: 3.8em;
-}
-
-header a {
-    width: 45%;
-    display: flex;
-    justify-content: center;
-
-}
-
-header img {
-    width: 100%;
 }
 
 /*nav*/
@@ -338,7 +324,7 @@ aside p {
 
 section {
     background-color: var(--background-2);
-    height: 78.5em;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -517,4 +503,211 @@ footer h2 {
     margin-top: 2.5%;
     margin-bottom: 1%;
     width: fit-content;
+}
+
+/*media querries*/
+
+/*tablettes*/
+
+@media screen and (min-width:768px) and (max-width:1365px) {
+
+    /*loading spinner*/
+
+    .spinner__title {
+        font-size: 4.5em;
+        background-position-y: 200px;
+    }
+
+    .spinner__title::before {
+        right: 20%;
+        width: 60%;
+    }
+
+    .spinner__title::after {
+        right: 20%;
+        width: 60%;
+    }
+
+    /*header*/
+    header {
+        height: 4.2em;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+
+    /*nav*/
+
+    .nav__location {
+        height: 3.5em;
+    }
+
+    .location__city {
+        width: 20%;
+        margin-right: 0%;
+    }
+
+    .fa-location-dot {
+        margin: 0;
+        font-size: 1.3em;
+    }
+
+    .nav__title {
+        height: 23em;
+        margin-bottom: 10%;
+    }
+
+    .nav__title h2 {
+        margin-top: 7%;
+        margin-left: 0;
+        font-size: 2em ;
+    }
+
+    .nav__title p {
+        font-size: 1.4em;
+    }
+
+    .title__link {
+        width: 40%;
+        height: 3.2em;
+        font-size: 1.2em;
+    }
+
+    /*main*/
+
+    main h2 {
+        font-size: 1.7em;
+    }
+
+    /*aside*/
+    
+    aside h2 {
+        margin-left: 6%;
+        margin-bottom:5% ;
+    }
+
+    aside {
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+
+    .aside__box--2 {
+        height: 5em;
+    }
+
+    .box__number {
+        width: 0px;
+        height: 0px;
+        font-size: 1em;
+    }
+
+    .aside__icon {
+        font-size: 1.6em;
+    }
+
+    aside p {
+        margin-left: 7%;
+        font-size: 1.2em
+    }
+
+    /*section restaurants*/
+
+    section h2 {
+        margin-top: 10%;
+    }
+
+    .restaurant__box {
+        height: 26em;
+    }
+
+    .restaurant__box img {
+        height: 75%;
+    }
+
+    .box__title {
+        height: 25%;
+    }
+
+    .restaurant__box h3 {
+        font-size: 1.4em;
+    }
+
+    .restaurant__box p {
+        font-size: 1.4em;
+    }
+
+    .restaurant__box--new {
+        width: 18%;
+        font-size: 1.5em;
+        margin-left: 68% ;
+    }
+
+    .restaurant__heart {
+        height: 70%;
+        margin-bottom: 2%;
+    }
+
+    .heart__empty,.heart__full {
+        font-size: 2.5em;
+    }
+
+    /*footer*/
+
+    footer {
+        height: auto;
+    }
+    
+    .footer__nav {
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+
+    footer h2 {
+        font-size: 1.9em;
+        margin-bottom: 2%;
+        margin-top: 4%;
+    }
+
+    footer p {
+        font-size: 1.2em;
+    }
+
+
+    .nav__link--1 {
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-bottom: 2%;
+        width: 45%;
+    }
+
+    .nav__link--1 p {
+        margin-left: 7%;
+    }
+
+
+    .nav__link--2 {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 38%;
+    }       
+
+    .nav__link--2 p {
+        margin-left: 6%;
+    }
+
+    .nav__link--3and4 {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .fa-handshake-angle {
+        font-size: 1.1em;
+    }
+
+    .fa-utensils {
+        font-size: 1.2em;
+    }
 }
