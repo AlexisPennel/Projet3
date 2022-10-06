@@ -1018,7 +1018,7 @@ footer h2 {
     .location__city {
         width: 10%;
         margin-right: 0%;
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 
     .fa-location-dot {
@@ -1027,37 +1027,37 @@ footer h2 {
     }
 
     .nav__title {
-        height: 30em;
+        height: 33em;
         margin-bottom: 10%;
     }
 
     .nav__title h2 {
         margin-top: 7%;
         margin-left: 0;
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     .nav__title p {
-        font-size: 1.4em;
+        font-size: 1.6em;
     }
 
     .title__link {
         width: 20%;
-        height: 3.2em;
-        font-size: 1.2em;
+        height: 3em;
+        font-size: 1.4em;
         margin-bottom: 5%;
     }
 
     /*main*/
 
     main h2 {
-        font-size: 1.7em;
+        font-size: 2.2em;
     }
 
     /*aside*/
 
     aside h2 {
-        margin-left: 2%;
+        margin-left: 2.4%;
         margin-bottom: 5%;
         grid-area: 1/1/1/4;
     }
@@ -1077,7 +1077,7 @@ footer h2 {
     }
 
     .aside__box--2 {
-        height: 10em;
+        height: 11em;
         margin-top: 8%;
         margin-left: 0;
     }
@@ -1091,13 +1091,15 @@ footer h2 {
     }
 
     .aside__icon {
-        font-size: 1.6em;
+        font-size: 2.2em;
         margin-left: 13%;
+        height: 0px;
+        width: 0px;
     }
 
     aside p {
-        margin-left: 7%;
-        font-size: 1.2em
+        margin-left: 12%;
+        font-size: 1.5em;
     }
 
     /*section restaurants*/
@@ -1117,8 +1119,8 @@ footer h2 {
 
     .restaurant__box {
         width: 74%;
-        height: 26em;
-        margin-bottom: 11%;
+        height: 32em;
+        margin-bottom: 13%;
     }
 
     .restaurant--marginL {
@@ -1132,7 +1134,7 @@ footer h2 {
     .restaurant__box--new {
         width: 10%;
         height: 6%;
-        font-size: 1.5em;
+        font-size: 1.7em;
         margin-left: 25%;
         margin-top: 2%;
     }
@@ -1142,11 +1144,11 @@ footer h2 {
     }
 
     .box__title h3 {
-        font-size: 1.4em;
+        font-size: 1.7em;
     }
 
     .box__title p {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     .restaurant__box img {
@@ -1160,7 +1162,7 @@ footer h2 {
 
     .heart__empty,
     .heart__full {
-        font-size: 2.3em;
+        font-size: 2.8em;
     }
 
     /*footer*/
@@ -1181,7 +1183,7 @@ footer h2 {
     }
 
     footer p {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
 
@@ -1193,7 +1195,7 @@ footer h2 {
     }
 
     .nav__link--1 p {
-        margin-left: 7%;
+        margin-left: 6.3%;
     }
 
 
@@ -1213,11 +1215,11 @@ footer h2 {
     }
 
     .fa-handshake-angle {
-        font-size: 1.1em;
+        font-size: 1.4em;
     }
 
     .fa-utensils {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
 }
