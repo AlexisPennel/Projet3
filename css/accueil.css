@@ -219,7 +219,6 @@ header {
     width: 35%;
     margin-right: 5%;
     color: black;
-    font-weight: bold;
 }
 
 .nav__title {
@@ -973,4 +972,252 @@ footer h2 {
     .fa-utensils {
         font-size: 1.2em;
     }
+}
+
+/*desktop*/
+
+@media screen and (min-width:1920px) {
+
+    html {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /*loading spinner*/
+
+    .spinner__title {
+        font-size: 4.5em;
+        background-position-y: 200px;
+    }
+
+    .spinner__title::before {
+        right: 34.5%;
+        width: 30%;
+    }
+
+    .spinner__title::after {
+        right: 34.5%;
+        width: 30%;
+    }
+
+    /*header*/
+    header {
+        height: 5.5em;
+    }
+
+    header h1 {
+        font-size: 4em;
+    }
+
+    /*nav*/
+
+    .nav__location {
+        height: 4.5em;
+    }
+
+    .location__city {
+        width: 10%;
+        margin-right: 0%;
+        font-size: 1.3em;
+    }
+
+    .fa-location-dot {
+        margin: 0;
+        font-size: 1.5em;
+    }
+
+    .nav__title {
+        height: 30em;
+        margin-bottom: 10%;
+    }
+
+    .nav__title h2 {
+        margin-top: 7%;
+        margin-left: 0;
+        font-size: 2em;
+    }
+
+    .nav__title p {
+        font-size: 1.4em;
+    }
+
+    .title__link {
+        width: 20%;
+        height: 3.2em;
+        font-size: 1.2em;
+        margin-bottom: 5%;
+    }
+
+    /*main*/
+
+    main h2 {
+        font-size: 1.7em;
+    }
+
+    /*aside*/
+
+    aside h2 {
+        margin-left: 2%;
+        margin-bottom: 5%;
+        grid-area: 1/1/1/4;
+    }
+
+    aside {
+        width: 84%;
+        margin-left: 8%;
+        margin-bottom: 10%;
+        display: grid;
+        grid-template-rows: 0.3fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .aside__box {
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .aside__box--2 {
+        height: 10em;
+        margin-top: 8%;
+        margin-left: 0;
+    }
+
+    .box__number {
+        width: 0px;
+        height: 0px;
+        font-size: 1.3em;
+        padding: 1.5%;
+        margin-left: 0;
+    }
+
+    .aside__icon {
+        font-size: 1.6em;
+        margin-left: 13%;
+    }
+
+    aside p {
+        margin-left: 7%;
+        font-size: 1.2em
+    }
+
+    /*section restaurants*/
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 1fr 1fr;
+    }
+
+    section h2 {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        grid-area: 1/1/1/3;
+        margin-left: 10%;
+    }
+
+    .restaurant__box {
+        width: 74%;
+        height: 26em;
+        margin-bottom: 11%;
+    }
+
+    .restaurant--marginL {
+        margin-left: 20%;
+    }
+
+    .restaurant--marginR {
+        margin-left: 6%;
+    }
+
+    .restaurant__box--new {
+        width: 10%;
+        height: 6%;
+        font-size: 1.5em;
+        margin-left: 25%;
+        margin-top: 2%;
+    }
+
+    .box__title {
+        height: 25%;
+    }
+
+    .box__title h3 {
+        font-size: 1.4em;
+    }
+
+    .box__title p {
+        font-size: 1.2em;
+    }
+
+    .restaurant__box img {
+        height: 75%;
+    }
+
+    .restaurant__heart {
+        height: 54%;
+        margin-bottom: 4%;
+    }
+
+    .heart__empty,
+    .heart__full {
+        font-size: 2.3em;
+    }
+
+    /*footer*/
+
+    footer {
+        height: auto;
+    }
+
+    .footer__nav {
+        margin-bottom: 2%;
+        margin-top: 1.5%;
+    }
+
+    footer h2 {
+        font-size: 2.2em;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+
+    footer p {
+        font-size: 1.2em;
+    }
+
+
+    .nav__link--1 {
+        margin-top: 1%;
+        margin-left: 0%;
+        margin-bottom: 1%;
+        width: 45%;
+    }
+
+    .nav__link--1 p {
+        margin-left: 7%;
+    }
+
+
+    .nav__link--2 {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        width: 38%;
+    }
+
+    .nav__link--2 p {
+        margin-left: 6%;
+    }
+
+    .nav__link--3and4 {
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    .fa-handshake-angle {
+        font-size: 1.1em;
+    }
+
+    .fa-utensils {
+        font-size: 1.2em;
+    }
+
 }
