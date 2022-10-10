@@ -192,56 +192,6 @@ main img {
 }
 
 
-#entrées>.main__menu-box:nth-child(2) {
-    animation: cartes 300ms ease;
-    animation-fill-mode: forwards;
-}
-
-#entrées>.main__menu-box:nth-child(3) {
-    animation: cartes 300ms 200ms ease;
-    animation-fill-mode: forwards;
-}
-
-#entrées>.main__menu-box:nth-child(4) {
-    animation: cartes 1s 300ms ease;
-    animation-fill-mode: forwards;
-}
-
-#entrées>.main__menu-box:nth-child(5) {
-    animation: cartes 300ms 600ms ease;
-    animation-fill-mode: forwards;
-}
-
-#plats>.main__menu-box:nth-child(2) {
-    animation: cartes 300ms 800ms ease;
-    animation-fill-mode: forwards;
-}
-
-#plats>.main__menu-box:nth-child(3) {
-    animation: cartes 300ms 1000ms ease;
-    animation-fill-mode: forwards;
-}
-
-#plats>.main__menu-box:nth-child(4) {
-    animation: cartes 300ms 1200ms ease;
-    animation-fill-mode: forwards;
-}
-
-#desserts>.main__menu-box:nth-child(2) {
-    animation: cartes 300ms 1400ms ease;
-    animation-fill-mode: forwards;
-}
-
-#desserts>.main__menu-box:nth-child(3) {
-    animation: cartes 300ms 1600ms ease;
-    animation-fill-mode: forwards;
-}
-
-#desserts>.main__menu-box:nth-child(4) {
-    animation: cartes 300ms 1800ms ease;
-    animation-fill-mode: forwards;
-}
-
 .menu__text {
     width: 80%;
     margin-left: 3%;
@@ -318,6 +268,56 @@ p {
         opacity: 1;
         -webkit-opacity: 1;
     }
+}
+
+#entrées>.main__menu-box:nth-child(2) {
+    animation: cartes 300ms ease;
+    animation-fill-mode: forwards;
+}
+
+#entrées>.main__menu-box:nth-child(3) {
+    animation: cartes 300ms 200ms ease;
+    animation-fill-mode: forwards;
+}
+
+#entrées>.main__menu-box:nth-child(4) {
+    animation: cartes 1s 300ms ease;
+    animation-fill-mode: forwards;
+}
+
+#entrées>.main__menu-box:nth-child(5) {
+    animation: cartes 300ms 600ms ease;
+    animation-fill-mode: forwards;
+}
+
+#plats>.main__menu-box:nth-child(2) {
+    animation: cartes 300ms 800ms ease;
+    animation-fill-mode: forwards;
+}
+
+#plats>.main__menu-box:nth-child(3) {
+    animation: cartes 300ms 1000ms ease;
+    animation-fill-mode: forwards;
+}
+
+#plats>.main__menu-box:nth-child(4) {
+    animation: cartes 300ms 1200ms ease;
+    animation-fill-mode: forwards;
+}
+
+#desserts>.main__menu-box:nth-child(2) {
+    animation: cartes 300ms 1400ms ease;
+    animation-fill-mode: forwards;
+}
+
+#desserts>.main__menu-box:nth-child(3) {
+    animation: cartes 300ms 1600ms ease;
+    animation-fill-mode: forwards;
+}
+
+#desserts>.main__menu-box:nth-child(4) {
+    animation: cartes 300ms 1800ms ease;
+    animation-fill-mode: forwards;
 }
 
 /*check animation*/
@@ -713,7 +713,7 @@ footer h2 {
     }
 
     .nav__link--2 p {
-        margin-left: 6%;
+        margin-left: 7%;
     }
 
     .nav__link--3and4 {
