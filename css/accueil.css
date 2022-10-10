@@ -47,7 +47,7 @@ body h1 {
     justify-content: center;
     align-items: center;
     opacity: 1;
-    animation: loadingspinner__container 0.1s 3s linear;
+    animation: loadingspinner__container 0.1s 2.9s linear;
     animation-fill-mode: forwards;
 }
 
@@ -305,9 +305,6 @@ aside h2 {
 }
 
 .aside__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-left: 9%;
     width: 25px;
     height: 25px;
@@ -315,9 +312,18 @@ aside h2 {
     font-size: 1.2em;
 }
 
+.fa-mobile-screen-button {
+    margin-left: 10%;
+}
+
 aside p {
     margin-left: 7%;
 }
+
+.aside__text--choose {
+    margin-left: 6%;
+}
+
 
 .box__number {
     margin-left: 4.5%;
@@ -528,7 +534,7 @@ footer h2 {
 
 /*media querries*/
 
-/*tablettes*/
+/*tablettes 768px*/
 
 @media screen and (min-width:768px) and (max-width:1365px) {
 
@@ -734,7 +740,7 @@ footer h2 {
     }
 }
 
-/*laptop*/
+/*laptop 1366px*/
 
 @media screen and (min-width:1366px) and (max-width:1919px) {
 
@@ -884,7 +890,7 @@ footer h2 {
 
     .restaurant__box--new {
         width: 10%;
-        height: 4.5%;
+        height: 7%;
         font-size: 1.5em;
         margin-left: 25%;
         margin-top: 2%;
@@ -957,7 +963,7 @@ footer h2 {
     }
 
     .nav__link--2 p {
-        margin-left: 6%;
+        margin-left: 7%;
     }
 
     .nav__link--3and4 {
@@ -974,7 +980,7 @@ footer h2 {
     }
 }
 
-/*desktop*/
+/*desktop 1920px*/
 
 @media screen and (min-width:1920px) {
 
@@ -1223,4 +1229,3 @@ footer h2 {
     }
 
 }
-
