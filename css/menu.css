@@ -3,6 +3,8 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    max-width: 1920px;
+    margin: auto;
 }
 
 body {
@@ -281,7 +283,7 @@ p {
 }
 
 #entrées>.main__menu-box:nth-child(4) {
-    animation: cartes 1s 300ms ease;
+    animation: cartes 300ms 400ms ease;
     animation-fill-mode: forwards;
 }
 
