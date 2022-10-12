@@ -2,6 +2,8 @@
 
 html {
     scroll-behavior: smooth;
+    max-width: 1920px;
+    margin: auto;
 }
 
 body {
@@ -952,7 +954,7 @@ footer h2 {
     }
 
     .nav__link--1 p {
-        margin-left: 7%;
+        margin-left: 4%;
     }
 
 
@@ -963,7 +965,7 @@ footer h2 {
     }
 
     .nav__link--2 p {
-        margin-left: 7%;
+        margin-left: 3%;
     }
 
     .nav__link--3and4 {
@@ -1201,7 +1203,7 @@ footer h2 {
     }
 
     .nav__link--1 p {
-        margin-left: 6.3%;
+        margin-left: 3.8%;
     }
 
 
@@ -1212,7 +1214,7 @@ footer h2 {
     }
 
     .nav__link--2 p {
-        margin-left: 6%;
+        margin-left: 3%;
     }
 
     .nav__link--3and4 {
